@@ -7,8 +7,8 @@ title = " "
 
 [output.html]
 additional-js = ["custom.js"]
-base-url =  "https://abanoubnashaat.xyz/"
-site-url = "/mdBook/"
+base-url = "/"
+site-url = "/"
 
 [output.html.search]
 enable = true
