@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Abanoub is Under Development</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 1.2em;
-        }
+        body { text-align: center; padding: 50px; }
+        img { display: none; max-width: 300px; }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Coming Soon!</h1>
-        <p>Our website is under construction. Stay tuned!</p>
+    <h1>Abanoub is under development now!</h1>
+    <p>In the meantime, enjoy some kittens!</p>
+    <button id="showCats">Show Cats</button>
+    <div id="catImages">
+        <img src="cat1.jpg" alt="Cat 1">
+        <img src="cat2.jpg" alt="Cat 2">
+        <img src="cat3.jpg" alt="Cat 3">
+        <!-- Add more cat images as needed -->
     </div>
+    <script>
+        const button = document.getElementById('showCats');
+        const cats = document.querySelectorAll('#catImages img');
+        let currentCat = 0;
+
+        button.onclick = function() {
+            cats.forEach((cat, index) => cat.style.display = 'none'); // Hide all
+            cats[currentCat].style.display = 'block'; // Show current
+            currentCat = (currentCat + 1) % cats.length; // Move to the next
+        };
+    </script>
 </body>
 </html>
