@@ -1,0 +1,14 @@
+[book]
+authors = ["Abanobbb"]
+language = "en"
+multilingual = false
+src = "src"
+title = " "
+
+[output.html]
+additional-js = ["custom.js"]
+base-url =  "https://abanoubnashaat.xyz/"
+
+[output.html.search]
+enable = true
+
