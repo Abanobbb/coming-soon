@@ -4,3 +4,4 @@ document.addEventListener("DOMContentLoaded", function() {
         searchInput.placeholder = "Search my content";
     }
 });
+
